@@ -42,7 +42,7 @@ double sum: result of numOne + numTwo
 double sum (decimal precision to the nearest hundredth)
 */
 double addNum(double numOne, double numTwo)
-{
+{q
     double sum;
     sum = numOne + numTwo;
 
