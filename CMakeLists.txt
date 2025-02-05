@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(focusAssignmentTwo LANGUAGES C)
+
+add_executable(focusAssignmentTwo input_and_functions.c)
+
+include(GNUInstallDirs)
+install(TARGETS focusAssignmentTwo
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
