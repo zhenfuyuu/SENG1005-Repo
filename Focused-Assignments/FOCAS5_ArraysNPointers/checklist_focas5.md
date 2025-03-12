@@ -7,7 +7,7 @@
     - This function should also use pointer arithmetic and take the 
     **same parameters as the sum function**.
     - The function should **return the average as a double** to account for potential decimal values.
-3. *"Display the results** of each operation.
+3. **Display the results** of each operation.
 4. Handle potential issues, such as division by zero if the array size is zero, with error messages.
     - REMEMBER – When possible create a display function separately to handle one or more of the displays.
 
