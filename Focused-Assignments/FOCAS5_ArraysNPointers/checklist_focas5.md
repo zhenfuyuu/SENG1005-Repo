@@ -1,13 +1,13 @@
 # Checklist for Focused Assignment 05
 ## Main Program Requirements
 1. Create a function that **calculates the sum** of the array elements using **pointer arithmetic**.
-    - The function should take the pointer to the array and the array size as parameters.
+    - The function should **take the pointer to the array and the array size** as parameters.
     - **Return the calculated sum** to the calling function.
 2. Create a separate function to **calculate the average** of the array elements.
     - This function should also use pointer arithmetic and take the 
     **same parameters as the sum function**.
     - The function should **return the average as a double** to account for potential decimal values.
-3. Display the results of each operation.
+3. *"Display the results** of each operation.
 4. Handle potential issues, such as division by zero if the array size is zero, with error messages.
     - REMEMBER – When possible create a display function separately to handle one or more of the displays.
 
