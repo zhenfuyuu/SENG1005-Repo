@@ -14,7 +14,7 @@
 ## Requirements for Arrays and Pointers
 1. Define an array of **integers** with a size of **at least 10 elements**.
 2. **Initialize the array** with predefined values within your main function.
-3. The predefined values are 
+3. The predefined values are:
 > {10, 0, 345, -567, 7, 89, 256, 512, -2048, 4096}
 4. Declare a pointer that will **point to the first element** of the array.
 5. Use pointer arithmetic (e.g., *(ptr + i)) to traverse and manipulate the array elements instead of
