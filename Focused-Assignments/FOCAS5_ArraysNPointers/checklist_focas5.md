@@ -1,4 +1,6 @@
 # Checklist for Focused Assignment 05
+Writing a program that will leverage pointers to access and manipulate elements of an array.
+It will also calculate the sum and average of the elements in the array using pointer arithmetic.
 ## Main Program Requirements
 1. Create a function that **calculates the sum** of the array elements using **pointer arithmetic**.
     - The function should **take the pointer to the array and the array size** as parameters.
