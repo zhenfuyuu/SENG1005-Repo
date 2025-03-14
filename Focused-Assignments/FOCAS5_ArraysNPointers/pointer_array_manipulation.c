@@ -32,7 +32,7 @@ return 0;
 FUNCTION: void getSum
 DESCRIPTION: Calculates the sum of the array elements.
 PARAMETERS:
-int *arrayPtr: Pointer parameter for the array
+const int *arrayPtr: Pointer parameter for the array
 size_t arraySize: Gets the size of the array and points to it
 RETURNS:
 Calculated sum of the array.
