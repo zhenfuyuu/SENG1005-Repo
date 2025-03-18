@@ -24,12 +24,13 @@ const int *arrayPtr = array; //Declaring pointer to array (points to first eleme
 //output sum
 int sum = 0; //initalize sum
 int *sumPtr = &sum; //pointing to sum value to insert into function
-getSum(arrayPtr, SIZE, sumPtr);
+getSum(arrayPtr, SIZE, sumPtr); //Calling sum function
 printf("The sum of the array elements is %d\n", sum);
 //outout average
 double average = 0; //initalize average
 double *avgPtr = &average; //pointer to average variable
-getAvg(arrayPtr, SIZE, avgPtr);
+getAvg(arrayPtr, SIZE, avgPtr); //Calling average function
+printf("The average number of the array elements is %f\n", average);
 
 return 0;
 }
@@ -66,9 +67,9 @@ Calculated average of the array
 void getAvg(const int *arrayPtr, size_t arraySize, double *avgPtr)
 {
 //Adding the sum before division
-for (size_t i = 0; i < arraySize; i++)
+for (size_t i = 0; i < arraySize; ++i)
 {
-*(int*)avgPtr = *(int*)avgPtr + *arrayPtr; //Casting avgPtr to int to add total sum before division
+*avgPtr = *(double *)arrayPtr + *avgPtr; //cast array pointer as double?
 arrayPtr++;
 }
 //Divide average by total number of index's in array
