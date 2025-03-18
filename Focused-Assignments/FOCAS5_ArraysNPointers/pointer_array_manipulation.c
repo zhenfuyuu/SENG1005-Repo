@@ -11,7 +11,7 @@ It will also calculate the sum and average of the elements in the array using po
 #define SIZE 10 //defining size of array
 
 //Function prototypes
-void getSum (const int *arrayPtr, size_t arraySize);
+void getSum (const int *arrayPtr, size_t arraySize, int *sumPtr);
 void getAvg(int *arrayPtr, size_t arraySize);
 
 int main (void)
@@ -22,9 +22,11 @@ const int array[SIZE] = {10, 0, 345, -567, 7,
 const int *arrayPtr = array; //Declaring pointer to array (points to first element by default)
 
 //output sum
-getSum(arrayPtr, SIZE);
-int sum = 0;
+int sum = 0; //initalize sum
+int *sumPtr = &sum; //pointing to sum value to insert into function
+getSum(arrayPtr, SIZE, sumPtr);
 printf("The sum of the array elements is %d\n", sum);
+//outout average
 
 return 0;
 }
@@ -34,14 +36,16 @@ DESCRIPTION: Calculates the sum of the array elements.
 PARAMETERS:
 const int *arrayPtr: Pointer parameter for the array
 size_t arraySize: Gets the size of the array and points to it
+int *sumPtr: pointer parameter in order to return the sum
 RETURNS:
 Calculated sum of the array.
 */
-void getSum (const int *arrayPtr, size_t arraySize)
+void getSum (const int *arrayPtr, size_t arraySize, int *sumPtr)
 {
-int sum = 0; //Initalizing the sum of array elements
-for (size_t i = 0; i < SIZE; ++i)
+for (size_t i = 0; i < arraySize; i++) //looping through array
 {
-sum = *arrayPtr;
+*sumPtr = *sumPtr + *arrayPtr;
+arrayPtr++;
+//returns sum of the array elements
 }
 }
